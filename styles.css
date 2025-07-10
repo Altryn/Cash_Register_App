@@ -1,0 +1,82 @@
+/* Inter Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+
+}
+
+/* Utillites style */
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  padding: 1rem;
+  background-color:  #5F8B4C;
+  color: white;
+
+  gap: 2rem;
+}
+header {
+
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.header-text {
+  font-weight: 600;
+}
+.brand {
+  font-style: italic;
+}
+
+main {
+  align-items: center;
+}
+
+main > div {
+  flex: 100%;
+}
+
+.cash-section {
+  gap: .5rem;
+  align-items: center;
+
+  /* Im too lazy to assign class to the child */
+  label {
+    font-weight: 500;
+    font-size: 1.2rem;
+  }
+
+  input {
+    padding: .25rem .5rem;
+  }
+
+  button {
+    padding: .5rem .75rem;
+    font-size: 1rem;
+    font-weight: 500;
+
+    background-color: #945034;
+    color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+
+    transition: all .2s;
+  }
+
+  button:hover {
+    color: lightgreen;
+  }
+
+  button:active {
+    filter: brightness(92%);
+    transform: scale(.95);
+  }
+}
